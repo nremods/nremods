@@ -47,18 +47,19 @@
       <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 nre-white p-4 rounded-5 text-center shadow">
         <img class="sign-logo mb-4" src="{% static 'image/logos/nre-logo.png' %}" alt="">
         <h3 class="poppins-medium nre-text-black text-center mb-4">Sign in to your account</h3>
-        <form action="./home.html" method="get">
+        <form action="{% url 'login' %}" method="post">
+         {% csrf_token %}
             <div class="input-group mb-3 rounded-5 border border-black overflow-hidden">
                 <span class="input-group-text bg-white border-0 ps-4">
                 <i class="fa-solid fa-user"></i>
                 </span>
-                <input type="text" class="form-control border-0 py-3" placeholder="Enter your username">
+                <input type="text" class="form-control border-0 py-3" name="username" placeholder="Enter your username">
             </div>
            <div class="input-group mb-3 rounded-5 border border-black overflow-hidden">
                 <span class="input-group-text bg-white border-0 ps-4">
                     <i class="fa-solid fa-lock"></i>
                 </span>
-                <input type="password" class="form-control border-0 py-3" placeholder="Enter your password">
+                <input type="password" class="form-control border-0 py-3" name="password" placeholder="Enter your password">
             </div>
         <button class="btn btn-dark mt-1 p-5 py-3 rounded-5 w-100" type="submit">Log in</button>
         </form>
@@ -80,4 +81,5 @@
     </div>
   </div>
 </body>
+
 </html>
