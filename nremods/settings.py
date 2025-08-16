@@ -45,7 +45,7 @@ ROOT_URLCONF = 'nremods.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],  # you can add template directories here
+        'DIRS': [BASE_DIR / "templates"],   # you can add template directories here
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -91,6 +91,6 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-'DIRS': [BASE_DIR / "templates"],  # add this line
+
 
 
