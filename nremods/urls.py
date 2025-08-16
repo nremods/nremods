@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
 from django.shortcuts import render
-from . import views 
+from nremods import views
 
 
 urlpatterns = [
@@ -18,4 +18,5 @@ urlpatterns = [
     path("pay/", pay, name="pay"),
     path("get-mail/", get_mail, name="get_mail"),
 ]
+
 
