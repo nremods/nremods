@@ -47,24 +47,24 @@
         <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 nre-white p-4 rounded-5 text-center shadow">
             <img class="sign-logo mb-4" src="{% static 'image/logos/nre-logo.png' %}" alt="">
             <h3 class="poppins-medium nre-text-black text-center mb-5">Create Account</h3>
-            <form class="mt-5" action="./login.html" method="get">
+            <form class="mt-5" action="{% url 'register' %}" method="get">
                 <div class="input-group mb-3 rounded-5 border border-black overflow-hidden">
                     <span class="input-group-text bg-white border-0 ps-4">
                     <i class="fa-solid fa-user"></i>
                     </span>
-                    <input type="text" class="form-control border-0 py-3" placeholder="Enter your Username" value="email@email">
+                    <input type="text" class="form-control border-0 py-3" name="username" placeholder="Enter your Username" value="email@email">
                 </div>
 				<div class="input-group mb-3 rounded-5 border border-black overflow-hidden">
                     <span class="input-group-text bg-white border-0 ps-4">
                     <i class="fa-solid fa-lock"></i>
                     </span>
-                    <input type="text" class="form-control border-0 py-3" placeholder="Enter your Password">
+                    <input type="text" class="form-control border-0 py-3" name="password" placeholder="Enter your Password">
                 </div>
 				<div class="input-group mb-3 rounded-5 border border-black overflow-hidden">
                     <span class="input-group-text bg-white border-0 ps-4">
                     <i class="fa-solid fa-key"></i>
                     </span>
-                    <input type="text" class="form-control border-0 py-3" placeholder="Confirm Password">
+                    <input type="text" class="form-control border-0 py-3" name="password2" placeholder="Confirm Password">
                 </div>
                 
                 <button class="btn btn-dark mt-1 p-5 py-3 rounded-5 w-100" type="submit">Create Account</button>
@@ -73,4 +73,5 @@
     </div>
   </div>
 </body>
+
 </html>
