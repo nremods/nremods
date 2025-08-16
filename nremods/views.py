@@ -23,7 +23,7 @@ def register(request):
         messages.success(request, "Account created successfully!")
         return redirect("login")
 
-    return render(request, "register.html")
+    return render(request, "set-up.html")
 
 
 # Login
