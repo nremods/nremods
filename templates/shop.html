@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
  <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
-        <link rel="shortcut icon" href=".\image\logos\nre-logo.png"
+        <link rel="shortcut icon" href="{% static 'image/logos/nre-logo.png' %}"
             type="image/x-icon">
         <!-- bs-js -->
         <script
@@ -36,7 +37,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <!-- ------------ -->
           <!-- custom css js -->
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <!-- ------------ -->
          
     </head>
@@ -45,7 +46,7 @@
     <!-- nav bar start -->
     <nav class="mt-3 sticky-top navbar navbar-expand-lg primary-bg rounded py-0 ">
         <div class="container">
-            <a class="navbar-brand poppins-black nre-brand" href="#"><img src="./image/logos/nre-logo.png" alt="" width="40" height="40">NRE</a>
+            <a class="navbar-brand poppins-black nre-brand" href="#"><img src="{% static 'image/logos/nre-logo.png' %}" alt="" width="40" height="40">NRE</a>
             <button class="navbar-toggler border-0 poppins-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-ellipsis "></i>
             </button>
@@ -91,7 +92,7 @@
             <button class="btn btn-dark popins-medium ">Shop Now</button>
             </div>
             <div class="col-lg-6 ">
-                <img class="img-fluid" src="./image/other/home.png" alt="">
+                <img class="img-fluid" src="{% static 'image/other/home.png' %}" alt="">
             </div>
         </div>
     </div>
@@ -121,7 +122,7 @@
             <div class="row justify-content-center g-4">
                 <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -135,7 +136,7 @@
                 <!-- card one end -->
                 <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -149,7 +150,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -163,7 +164,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -177,7 +178,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -206,7 +207,7 @@
             <div class="row justify-content-center g-4">
                 <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -220,7 +221,7 @@
                 <!-- card one end -->
                 <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -234,7 +235,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -248,7 +249,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -262,7 +263,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -288,7 +289,7 @@
             <div class="row justify-content-center g-4">
                 <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -302,7 +303,7 @@
                 <!-- card one end -->
                 <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -316,7 +317,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -330,7 +331,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -344,7 +345,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -371,7 +372,7 @@
             <div class="row justify-content-center g-4">
                 <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -385,7 +386,7 @@
                 <!-- card one end -->
                 <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -399,7 +400,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -413,7 +414,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -427,7 +428,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -454,7 +455,7 @@
             <div class="row justify-content-center g-4">
                 <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -468,7 +469,7 @@
                 <!-- card one end -->
                 <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -482,7 +483,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -496,7 +497,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>
@@ -510,7 +511,7 @@
                 <!-- card one end -->
                  <!-- card 1 start -->
                 <div class="card border-0 col-lg-2 col-md-4 col-6 mt-lg-0 mt-md-2 mt-4 p-2 btn-div me-lg-1 mb-lg-1" onclick="window.location.href='./products.html'">
-                    <img src="./image/products/Rectangle 20.png" class="card-img-top" alt="">
+                    <img src="{% static 'image/products/Rectangle 20.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="poppins-medium mb-1">Product name</h5>
                         <p class="poppins-regular mb-0">product detils</p>

@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
-        <link rel="shortcut icon" href=".\image\logos\nre-logo.png"
+        <link rel="shortcut icon" href="{% static 'image/logos/nre-logo.png' %}"
             type="image/x-icon">
         <!-- bs-js -->
         <script
@@ -36,15 +37,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <!-- ------------ -->
           <!-- custom css js -->
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <!-- ------------ -->
          
-</head>
+    </head>
 <body class="vh-100 bg-sign-p">
   <div class="container h-100">
     <div class="row h-100 align-items-center justify-content-center mx-2">
       <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 nre-white p-4 rounded-5 text-center shadow">
-        <img class="sign-logo mb-4" src="./image/logos/nre-logo.png" alt="">
+        <img class="sign-logo mb-4" src="{% static 'image/logos/nre-logo.png' %}" alt="">
         <h3 class="poppins-medium nre-text-black text-center mb-4">Create an account</h3>
         <a href="./get-email.html" class="btn btn-dark nre-black w-100 poppins-regular rounded-5 mb-3 py-3 d-flex align-items-center justify-content-center gap-2">
           <i class="fa-solid fa-envelope"></i> Continue with Email
