@@ -66,4 +66,4 @@ def pay(request):
     return render(request, "pay.html")
 
 def get_mail(request):
-    return render(request, "get_mail.html")
+    return render(request, "get-email.html")
